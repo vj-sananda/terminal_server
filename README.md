@@ -1,20 +1,16 @@
-# MCP Server for Executing Terminal Commands
+# MCP STDIO and SSE Server Examples
 
 ## Introduction
 
-Hey everyone! Welcome back to **The AI Language**. In this project, we’re building an **MCP server that can execute terminal commands**. This allows you to ask **Claude for Desktop** to run commands on your computer and return the output — like using a terminal, but powered by AI!
+Welcome to **The AI Language**. In this project, we have four examples for MCP Servers
 
-> 🎥 Video tutorials:
->
-> - **Without Docker:** [![Watch here](https://img.youtube.com/vi/_veLqeCzdIQ/0.jpg)](https://youtu.be/_veLqeCzdIQ)
-> - **With Docker:** [![Watch here](https://img.youtube.com/vi/cgml6yzrOjc/0.jpg)](https://youtu.be/cgml6yzrOjc)
+## Four ways to setup your MCP Servers
+1. terminal_server.py - MCP server, over STDIO, local, without docker - tutorial at https://youtu.be/_veLqeCzdIQ
+2. terminal_server.py - MCP server, over STDIO, local, with docker - tutorial at https://youtu.be/cgml6yzrOjc
+3. sse_server/terminal_server_sse.py - an MCP server, over SSE, local, with docker - tutorial at https://youtu.be/s0YJNcT1XMA
+4. sse_server/terminal_server_sse.py - an MCP server, over SSE, on web Google Cloud Platform, with docker - tutorial at https://youtu.be/s0YJNcT1XMA
 
-[SUBSCRIBE](https://youtube.com/@theailanguage?sub_confirmation=1)
-
-If you enjoy learning about AI, coding, and automation, please **like and subscribe** to the channel — it really helps us make more great content for you!
-
-
----
+[SUBSCRIBE](https://youtube.com/@theailanguage?sub_confirmation=1) - If you enjoy learning about AI, coding, and automation, please **like and subscribe** to the channel — it really helps us make more great content for you!
 
 ## What is MCP?
 
@@ -24,23 +20,6 @@ If you enjoy learning about AI, coding, and automation, please **like and subscr
 - **Run tools** (functions that AI can execute)
 - **Use prompts** (predefined templates for tasks)
 
-In this tutorial, we’re building a tool that takes a command, runs it in the terminal, and sends back the output.
-
----
-
-## Two Ways to Set Up Your MCP Server
-
-You can run your MCP server **with or without Docker**:
-
-### 🔹 Option 1: Run Directly Using Python (no Docker)
-
-This is great for development or local experimentation.
-
-### 🔹 Option 2: Run Using Docker
-
-Perfect for clean environments and easy distribution — no need to install Python or dependencies globally.
-
-Both methods work with **Claude for Desktop**, and we’ll walk you through both.
 
 ---
 
@@ -183,17 +162,14 @@ In Claude, try these prompts:
 You should see the output directly from your terminal server 🎉
 
 ---
+## Option 3, 4
+See Video Tutorial mentioned above
+
 
 ## Wrapping Up
-
 Congrats! You’ve built a working MCP server that executes terminal commands — and you can run it with or without Docker.
 
 Want to go further?
 - Add security checks to block dangerous commands
 - Let Claude write to or read from files
 - Connect to cloud or remote systems
-
-👉 Let us know in the YouTube comments what you'd like to build next!
-
-Don’t forget to **like, subscribe, and share** to support more videos like this. See you next time 🚀
-
